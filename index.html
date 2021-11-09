@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter - KolsuzLordd</title>
+</head>
+<style>
+    #board{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 40px auto;
+        border: 2px solid white;
+        background-color: rgb(35, 37, 155);
+    }
+
+    #jet{
+        position: absolute;
+        width: 39px;
+        height: 42px;
+        background:url('./swim\ lord.gif') ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        bottom: 0px;
+    }
+    .bullets{
+        position:absolute;
+        bottom: 40px;
+        left: 50px;
+        width: 30px;
+        height: 30px;
+        background: url('./hammer.png');
+        background-size: contain;
+        background-repeat: no-repeat;     
+    }
+    .rocks{
+        position:absolute;
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        background: url('./ouzbir.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+</style>
+<script src="./app.js" defer></script>
+<body>
+    <div id="board">
+        <div class="rocks"></div>
+        
+        <div id="jet"></div>
+    </div>
+    
+</body>
+
+</html>
